@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: arquivo_parquet
+    volumes:
+      - .:/app
+    working_dir: /app
+    stdin_open: true
+    tty: true
